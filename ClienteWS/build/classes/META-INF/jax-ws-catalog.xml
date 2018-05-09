@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="http://localhost:8080/ServicoWeb/ImplService?wsdl" uri="wsdl/localhost_8080/ServicoWeb/ImplService.wsdl"/>
-    <system systemId="http://localhost:8080/ServicoWeb/ImplService?xsd=1" uri="wsdl/localhost_8080/ServicoWeb/ImplService.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/WSWilliamSdayle/ImplService?wsdl" uri="wsdl/localhost_8080/WSWilliamSdayle/ImplService.wsdl"/>
-    <system systemId="http://localhost:8080/WSWilliamSdayle/ImplService?xsd=1" uri="wsdl/localhost_8080/WSWilliamSdayle/ImplService.xsd_1.xsd"/>
+    <system systemId="http://192.168.100.150:8080/ServicoWeb/ImplService?wsdl" uri="wsdl/localhost_8080/ServicoWeb/ImplService.wsdl"/>
+    <system systemId="http://192.168.100.150:8080/ServicoWeb/ImplService?xsd=1" uri="wsdl/localhost_8080/ServicoWeb/ImplService.xsd_1.xsd"/>
+    <system systemId="http://192.168.100.150:8080/WSWilliamSdayle/ImplService?wsdl" uri="wsdl/localhost_8080/WSWilliamSdayle/ImplService.wsdl"/>
+    <system systemId="http://192.168.100.150:8080/WSWilliamSdayle/ImplService?xsd=1" uri="wsdl/localhost_8080/WSWilliamSdayle/ImplService.xsd_1.xsd"/>
+    <system systemId="file:/C:/Users/willi/Downloads/WSJoseM.xml" uri="wsdl/WSJoseM.xml.wsdl"/>
 </catalog>

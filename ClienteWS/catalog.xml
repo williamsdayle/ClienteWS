@@ -4,4 +4,5 @@
     <system systemId="http://localhost:8080/ServicoWeb/ImplService?xsd=1" uri="xml-resources/web-service-references/ImplService/wsdl/localhost_8080/ServicoWeb/ImplService.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/WSWilliamSdayle/ImplService?wsdl" uri="xml-resources/web-service-references/ImplService/wsdl/localhost_8080/WSWilliamSdayle/ImplService.wsdl"/>
     <system systemId="http://localhost:8080/WSWilliamSdayle/ImplService?xsd=1" uri="xml-resources/web-service-references/ImplService/wsdl/localhost_8080/WSWilliamSdayle/ImplService.xsd_1.xsd"/>
+    <system systemId="file:/C:/Users/willi/Downloads/WSJoseM.xml" uri="xml-resources/web-service-references/WSJoseM/wsdl/WSJoseM.xml.wsdl"/>
 </catalog>

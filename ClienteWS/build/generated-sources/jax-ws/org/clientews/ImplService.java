@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ImplService", targetNamespace = "http://inter.org/", wsdlLocation = "http://localhost:8080/WSWilliamSdayle/ImplService?wsdl")
+@WebServiceClient(name = "ImplService", targetNamespace = "http://inter.org/", wsdlLocation = "http://192.168.100.150:8080/WSWilliamSdayle/ImplService?wsdl")
 public class ImplService
     extends Service
 {
@@ -30,7 +30,7 @@ public class ImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/WSWilliamSdayle/ImplService?wsdl");
+            url = new URL("http://192.168.100.150:8080/WSWilliamSdayle/ImplService?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

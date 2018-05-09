@@ -39,15 +39,11 @@ public class Cliente extends javax.swing.JFrame {
 
         codigo = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        nome = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         btBus = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Código:");
-
-        jLabel2.setText("Nome:");
 
         btBus.setText("Buscar");
         btBus.addActionListener(new java.awt.event.ActionListener() {
@@ -67,15 +63,10 @@ public class Cliente extends javax.swing.JFrame {
                         .addComponent(btBus, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 18, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(nome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
-                            .addComponent(codigo, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(20, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,22 +76,18 @@ public class Cliente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(4, 4, 4)
-                .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btBus, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btBusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBusActionPerformed
-       if(!this.codigo.getText().trim().equals("") || !this.nome.getText().trim().equals("")){
+       if(!this.codigo.getText().trim().equals("")){
        c =  metodos.returnObj(codigo.getText());
        JOptionPane.showMessageDialog(null,"NOME DO CLIENTE => " + c.getNome()+"\n" + "CODIGO DO CLIENTE => " + c.getCodigo()+"\n" + "SALDO DO CLIENTE => " + c.getSaldo()+"\n");
-       }if(this.codigo.getText().trim().equals("") || this.nome.getText().trim().equals("")){
+       }if(this.codigo.getText().trim().equals("")){
        
        JOptionPane.showMessageDialog(null,"Campos nulos");
        }
@@ -144,7 +131,5 @@ public class Cliente extends javax.swing.JFrame {
     private javax.swing.JButton btBus;
     private javax.swing.JTextField codigo;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField nome;
     // End of variables declaration//GEN-END:variables
 }
